@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Full Stack Web Developer</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
 </head>
 <body>
     <div class="topnav">
@@ -13,6 +15,10 @@
         <a href="portfolio.html">Portfolio</a>
         <a href="contact.html">Contact</a>
     </div>
+
+    <div id="header"></div>
+
+
     <div class="wrapper">
         <header>
             <h1>About Me</h1>
@@ -47,7 +53,7 @@
         </div>
     </div>
     <div class="footer">
-            Copyright &copy; <span id="copyright_year"></span> by Dina Rudenko. All Rights Reserved.
+            Copyright &copy; <span id="copyright_year"></span> Designed by Dina Rudenko at <a target="_blank" href="http://businessonwww.com/">BusinessOnWWW.com&nbsp</a> | Austin Texas Web Design | All Rights Reserved.
     </div>
     <script>
             function init() {
@@ -60,5 +66,14 @@
         }
         window.onload = init;
     </script>
+     <div id="footer"></div>
+     <script type="text/javascript">
+        $(document).ready(function(){
+          $("#header").load("header.html");
+          $("#footer").load("footer.html");
+         });
+        </script>
+        
+        
 </body>
 </html>

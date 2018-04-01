@@ -18,12 +18,25 @@
             <h1>Contact</h1>
         </header>
         <div>
-            
+            <form action="/page.php" id="contactForm">
+                <label class="contactForm">Name:</label>
+                <br>
+                <input type="text" id="fname" name="fname" class="fname" placeholder="Name:">
+                <br>
+                Email:<br>
+                <input type="email" name="email">
+                <br>
+                Message:<br>
+                <textarea id="mymessage" name="fmessage" class="fmessage" placeholder="Type your message here"></textarea>
+                <br><br>
+                <input type="submit" id="fsubmit" name="fsubmit" class="fbutton" value="Submit">
+                <br><br><br><br>
+            </form>
 
         </div>
     </div>
     <div class="footer">
-            Copyright &copy; <span id="copyright_year"></span> by Dina Rudenko. All Rights Reserved.
+            Copyright &copy; <span id="copyright_year"></span> Designed by Dina Rudenko at <a target="_blank" href="http://businessonwww.com/">BusinessOnWWW.com&nbsp</a> | Austin Texas Web Design | All Rights Reserved.
     </div>
     <script>
             function init() {
