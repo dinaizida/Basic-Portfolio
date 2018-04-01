@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Full Stack Web Developer</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <title>Full Stack Web Developer</title>
+                <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                
+            </head>
 <body>
     <div class="topnav">
         <a href="index.html">About</a>
@@ -17,23 +20,32 @@
         <header>
             <h1>Contact</h1>
         </header>
-        <div>
+        <div class="ContacMeForm">
             <form action="/page.php" id="contactForm">
                 <label class="contactForm">Name:</label>
                 <br>
                 <input type="text" id="fname" name="fname" class="fname" placeholder="Name:">
                 <br>
                 Email:<br>
-                <input type="email" name="email">
+                <input type="text" id="femail" name="femail" class="femail" placeholder="Email:">
                 <br>
                 Message:<br>
-                <textarea id="mymessage" name="fmessage" class="fmessage" placeholder="Type your message here"></textarea>
+                <textarea id="mymessage" name="mymessage" class="fmessage" placeholder="Type your message here" rows="5" cols="18"></textarea>
                 <br><br>
                 <input type="submit" id="fsubmit" name="fsubmit" class="fbutton" value="Submit">
                 <br><br><br><br>
             </form>
+        </div>
+        <div class="ContactSocial">
+            <h3>Connect with Me</h3>
+            <a href="https://github.com/dinaizida" target="_blank"><i style="font-size:24px" class="fa">&#xf092;</i></a>
+            <a href="https://www.linkedin.com/in/DinaRudenko/" target="_blank"><i style="font-size:24px" class="fa">&#xf08c;</i></a>
+            <a href="https://stackoverflow.com/users/6179580/dina" target="_blank"><i style="font-size:24px" class="fa">&#xf16c;</i></a>
+            <a href="https://www.facebook.com/businessonwww/" target="_blank"><i style="font-size:24px" class="fa">&#xf082;</i></a>
 
         </div>
+        <br><br>
+
     </div>
     <div class="footer">
             Copyright &copy; <span id="copyright_year"></span> Designed by Dina Rudenko at <a target="_blank" href="http://businessonwww.com/">BusinessOnWWW.com&nbsp</a> | Austin Texas Web Design | All Rights Reserved.
@@ -49,5 +61,10 @@
         }
         window.onload = init;
     </script>
+    <br>
+    <a href="https://github.com/dinaizida" target="_blank"><i style="font-size:16px" class="fa">&#xf092;</i></a>
+            <a href="https://www.linkedin.com/in/DinaRudenko/" target="_blank"><i style="font-size:16px" class="fa">&#xf08c;</i></a>
+            <a href="https://stackoverflow.com/users/6179580/dina" target="_blank"><i style="font-size:16px" class="fa">&#xf16c;</i></a>
+            <a href="https://www.facebook.com/businessonwww/" target="_blank"><i style="font-size:16px" class="fa">&#xf082;</i></a>
 </body>
 </html>
