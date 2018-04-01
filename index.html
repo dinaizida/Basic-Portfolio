@@ -4,11 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Full Stack Web Developer</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-    
-    
+    <div class="topnav">
+        <a class="active" href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="wrapper">
+        <header>
+            <h1>About Me</h1>
+        </header>
+        <div>
+            <img src="assets/images/about.jpg">
+            <p>Hi, I’m Dina! I’m a bright, energetic and self-motivated
+              full-stack web developer and design enthusiast.
+            </p>
+            <p>I am a detail-oriented, deadline-conscious problem solver with
+               previous software development experience building interactive web
+               applications from mockup to deployment. 
+               As a web developer, I have built dynamic web
+               applications utilizing HTML5, CSS3, JavaScript, jQuery, AJAX, 
+               responsive design, JSON, RESTful APIs, Bootstrap, Handlebars.js,
+               Firebase, cookies, local storage, Node.js, Express.js, React.js, 
+               MongoDB, MySQL, Sequelize, MVC, Heroku, and Git.     
+            </p>
+            <p>
+               I’m a thoughtful and pragmatic decision maker with an excellent 
+               organizational and interpersonal skills, ability to remain calm and 
+               focused during difficult situations, and willingless to go the 
+               extra mile to accomplish objectives.
+            </p>
+            <p>
+               I’m excited to continue cultivating my technical knowledge 
+               and contribute meaningfully to impact-driven, technological
+               advancements that improve our everyday lives.
+            </p>
+
+
+        </div>
+    </div>
+    <div class="footer">
+            Copyright &copy; <span id="copyright_year"></span> by Dina Rudenko. All Rights Reserved.
+    </div>
+    <script>
+            function init() {
+            getCopyrightYear();
+        } 
+        function getCopyrightYear() {
+            var d = new Date();
+            var thisYear = d.getFullYear();
+            document.getElementById("copyright_year").innerHTML = thisYear;
+        }
+        window.onload = init;
+    </script>
 </body>
 </html>

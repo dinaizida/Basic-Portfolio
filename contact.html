@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Full Stack Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-    
+    <div class="topnav">
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a class="active" href="contact.html">Contact</a>
+    </div>
+    <div class="wrapper">
+        <header>
+            <h1>Contact</h1>
+        </header>
+        <div>
+            
+
+        </div>
+    </div>
+    <div class="footer">
+            Copyright &copy; <span id="copyright_year"></span> by Dina Rudenko. All Rights Reserved.
+    </div>
+    <script>
+            function init() {
+            getCopyrightYear();
+        } 
+        function getCopyrightYear() {
+            var d = new Date();
+            var thisYear = d.getFullYear();
+            document.getElementById("copyright_year").innerHTML = thisYear;
+        }
+        window.onload = init;
+    </script>
 </body>
 </html>
