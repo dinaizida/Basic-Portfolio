@@ -10,13 +10,7 @@ body {
     margin: 0 auto;
     
 }
-.topnav {
-    width: 100%;
-    background-color: #ffffff;
-    border: solid 1px #cccccc;
-    padding: 20px;
-    border-bottom: solid 3px #e8a734;
-}
+
 hr {
     margin-top: 0.5em;
     margin-bottom: 1.5em;
@@ -29,7 +23,7 @@ hr {
     width: 960px;
     height: 600px;
     background-color: #ffffff;
-    margin: 30px auto;
+    margin: 100px auto;
     border: solid 1px #dddddd;
     padding: 20px; 
 }
@@ -119,20 +113,24 @@ li {
 .ContactSocial {
     width: 210px;
     height: 180px;
-    margin: 50px;
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
     float: left;
 }
 .ContacMeForm  {
-    width: 60%;
+    width: 70%;
     height: 500px;
-    margin: 50px;
-    position: relative;
+    margin-right: 50px;
+    position: absolute;
+    top:0;
+    left: 0;
     float: left;
 }
 .wrap {
     background-color: #ffffff;
-    margin: 30px;
+    margin-left: 0;
+    margin-top: 0;
     border: solid 1px #dddddd;
     padding: 20px; 
 }
@@ -153,14 +151,49 @@ input, textarea {
 }
 #fsubmit:hover {
     background: #aee1ea;
-    font-size: 1.6em;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+
 }
 
 .container {
-    width: 960px;
-    margin: 0 auto;
+    background-image: url(../images/background.png);
+    background-color: #ebf8fa;
+    position: relative;
+    border: none;
 }
 ::placeholder {
     color: #71cadb;
     opacity: 0.5; 
 }
+/* navigagion nemu*/
+.logo-img {
+    float: left;
+    position: relative;
+    margin-bottom: 1px;
+    margin-left:200px;
+}
+.topnav {
+    width: 100%;
+    background-color: #ffffff;
+    border: solid 1px #cccccc;
+    padding: 10px;
+    border-bottom: solid 2px #71cadb;
+    overflow:hidden;
+    text-align: right;
+}
+.topnav a{
+  text-decoration: none;
+  padding: 14px 16px;
+  color: #777777;
+}
+
+.topnav a.active {
+    color: #e8a734;
+  }
+.topnav a:hover {
+    color: #e8a734
+  }
+  #links{
+      margin-right: 200px;
+  }
