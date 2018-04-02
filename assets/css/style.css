@@ -151,7 +151,16 @@ input, textarea {
     cursor: pointer;
     border-radius: 8px;
 }
+#fsubmit:hover {
+    background: #aee1ea;
+    font-size: 1.6em;
+}
+
 .container {
     width: 960px;
     margin: 0 auto;
+}
+::placeholder {
+    color: #71cadb;
+    opacity: 0.5; 
 }
