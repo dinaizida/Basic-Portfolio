@@ -42,7 +42,9 @@ h1, h2, h3 {
     font-family: 'Georgia', Times, Times New Roman, serif; 
     color: #71cadb;
 }
-
+h4{
+    font-family: 'Georgia', Times, Times New Roman, serif; 
+}
 .footer {
     clear: both;
     overflow: auto;
@@ -72,38 +74,7 @@ h1, h2, h3 {
     bottom: 30px;
     
 }
-/* portfolio page*/
 
-.wrapperPortfolio {
-    height: 800px;
-}
-li {
-    margin: 10px;
-}
-.one {
-    position: relative;
-    float: left;
-
-}
-.two {
-    position: relative;
-    float: left;
-}
-.three{
-    position: relative;
-    float: left;
-
-}
-.four{
-    position: relative;
-    float: left;
-
-}
-.five {
-    position: relative;
-    float: left;
-
-}
 
 /*contact page*/
 
@@ -197,3 +168,51 @@ input, textarea {
   #links{
       margin-right: 200px;
   }
+  /*portfolio page*/
+  .PortfolioContainer{
+      position: relative;
+  }
+  .text-block {
+    position: absolute;
+    bottom: 10px;
+    width: 300px;
+    background-color:#e8a734;
+    opacity: 0.8;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    color: white;
+    
+}
+
+
+.wrapperPortfolio {
+    height: 800px;
+}
+li {
+    margin: 10px;
+}
+.one {
+    position: relative;
+    float: left;
+
+}
+.two {
+    position: relative;
+    float: left;
+}
+.three{
+    position: relative;
+    float: left;
+
+}
+.four{
+    position: relative;
+    float: left;
+
+}
+.five {
+    position: relative;
+    float: left;
+
+}
