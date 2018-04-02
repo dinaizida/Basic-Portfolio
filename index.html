@@ -6,8 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Full Stack Web Developer</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $("#pheader").load("header.html");
+          $("#pfooter").load("footer.html");
+         });
+        </script>
 </head>
 <body>
     <div class="topnav">
@@ -51,26 +58,30 @@
 
         </div>
     </div>
+
     <div class="footer">
-            Copyright &copy; <span id="copyright_year"></span> Designed by Dina Rudenko at <a target="_blank" href="http://businessonwww.com/">BusinessOnWWW.com&nbsp</a> | Austin Texas Web Design | All Rights Reserved.
+        <div class="copy">
+                Copyright &copy; <span id="copyright_year"></span> Designed by Dina Rudenko at <a target="_blank" href="http://businessonwww.com/">BusinessOnWWW.com&nbsp</a> | Austin Texas Web Design | All Rights Reserved.
+        </div>   
+            <script>
+                    function init() {
+                    getCopyrightYear();
+                } 
+                function getCopyrightYear() {
+                    var d = new Date();
+                    var thisYear = d.getFullYear();
+                    document.getElementById("copyright_year").innerHTML = thisYear;
+                }
+                window.onload = init;
+            </script>
+            <br>
+        <div class="social">
+            <a href="https://github.com/dinaizida" target="_blank"><i style="font-size:16px" class="fa">&#xf092;</i></a>
+            <a href="https://www.linkedin.com/in/DinaRudenko/" target="_blank"><i style="font-size:16px" class="fa">&#xf08c;</i></a>
+            <a href="https://stackoverflow.com/users/6179580/dina" target="_blank"><i style="font-size:16px" class="fa">&#xf16c;</i></a>
+            <a href="https://www.facebook.com/businessonwww/" target="_blank"><i style="font-size:16px" class="fa">&#xf082;</i></a>
+        </div>
     </div>
-    <script>
-            function init() {
-            getCopyrightYear();
-        } 
-        function getCopyrightYear() {
-            var d = new Date();
-            var thisYear = d.getFullYear();
-            document.getElementById("copyright_year").innerHTML = thisYear;
-        }
-        window.onload = init;
-    </script>
-    <br>
-    <a href="https://github.com/dinaizida" target="_blank"><i style="font-size:16px" class="fa">&#xf092;</i></a>
-    <a href="https://www.linkedin.com/in/DinaRudenko/" target="_blank"><i style="font-size:16px" class="fa">&#xf08c;</i></a>
-    <a href="https://stackoverflow.com/users/6179580/dina" target="_blank"><i style="font-size:16px" class="fa">&#xf16c;</i></a>
-    <a href="https://www.facebook.com/businessonwww/" target="_blank"><i style="font-size:16px" class="fa">&#xf082;</i></a>
-     
     <div id="pfooter"></div>
     <!--<script type="text/javascript">
         $(document).ready(function(){
