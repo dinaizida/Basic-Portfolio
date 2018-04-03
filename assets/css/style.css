@@ -21,7 +21,7 @@ hr {
 }
 .wrapper {
     width: 960px;
-    height: 600px;
+    height: 780px;
     background-color: #ffffff;
     margin: 100px auto;
     border: solid 1px #dddddd;
@@ -30,12 +30,19 @@ hr {
 .mainimage {
     position: relative;
     float: left;
-    margin-left: 10px;
-    margin-right: 30px;
+    margin-left: 30px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 10px 10px 23px -1px rgba(119,119,119,0.5);
+    -moz-box-shadow: 10px 10px 23px -1px rgba(119,119,119,0.5);
+    box-shadow: 10px 10px 23px -1px rgba(119,119,119,0.5);
+
 }
+
 .maintext {
     position: relative;
     line-height: 1.5em;
+    margin: 30px;
     
 }
 h1, h2, h3 {
@@ -88,6 +95,10 @@ h4{
     top: 0;
     right: 0;
     float: left;
+    border-radius: 10%;
+    -webkit-box-shadow: 10px 10px 23px -1px rgba(119,119,119,0.5);
+    -moz-box-shadow: 10px 10px 23px -1px rgba(119,119,119,0.5);
+    box-shadow: 10px 10px 23px -1px rgba(119,119,119,0.5);
 }
 .ContacMeForm  {
     width: 70%;
@@ -124,6 +135,9 @@ input, textarea {
     background: #aee1ea;
     font-size: 1.5em;
     letter-spacing: 3px;
+    -webkit-box-shadow: 10px 10px 23px -1px rgba(119,119,119,0.5);
+    -moz-box-shadow: 10px 10px 23px -1px rgba(119,119,119,0.5);
+    box-shadow: 10px 10px 23px -1px rgba(119,119,119,0.5);
 
 }
 
@@ -137,6 +151,7 @@ input, textarea {
     color: #71cadb;
     opacity: 0.5; 
 }
+
 /* navigagion nemu*/
 .logo-img {
     float: left;
@@ -171,7 +186,11 @@ input, textarea {
   /*portfolio page*/
   .PortfolioContainer{
       position: relative;
+      
   }
+  .wrapperPortfolio {
+    height: 800px;
+}
   .text-block {
     position: absolute;
     bottom: 10px;
@@ -185,9 +204,49 @@ input, textarea {
     
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #71cadb;
+    border-radius: 4%;
+  }
 
-.wrapperPortfolio {
-    height: 800px;
+  .text-overlay {
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .PortfolioContainer:hover .overlay {
+    opacity: 1;
+  }
+
+  .PortfolioContainer:hover{
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    opacity: 0.8;
+    box-shadow: 0 14px 18px 0 rgba(43, 42, 41, 0.749), 0 6px 20px 0 rgba(43, 42, 41, 0.749);
+    transform: scale(1.03);
+}
+
+.PortfolioContainer {
+    
+    transition: scale(1);
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+
 }
 li {
     margin: 10px;
@@ -216,3 +275,10 @@ li {
     float: left;
 
 }
+.rb{
+    border-radius: 4%;
+    -webkit-box-shadow: 10px 10px 23px -1px rgba(119,119,119,0.5);
+    -moz-box-shadow: 10px 10px 23px -1px rgba(119,119,119,0.5);
+    box-shadow: 10px 10px 23px -1px rgba(119,119,119,0.5);
+}
+
