@@ -49,6 +49,12 @@ h1, h2, h3 {
     font-family: 'Georgia', Times, Times New Roman, serif; 
     color: #71cadb;
 }
+h2, h3 {
+    font-size: 1.3em;
+}
+h1{
+    font-size: 2em;
+}
 h4{
     font-family: 'Georgia', Times, Times New Roman, serif; 
 }
@@ -135,9 +141,9 @@ input, textarea {
     background: #aee1ea;
     font-size: 1.5em;
     letter-spacing: 3px;
-    -webkit-box-shadow: 10px 10px 23px -1px rgba(119,119,119,0.5);
-    -moz-box-shadow: 10px 10px 23px -1px rgba(119,119,119,0.5);
-    box-shadow: 10px 10px 23px -1px rgba(119,119,119,0.5);
+    -webkit-box-shadow: 5px 5px 13px -1px rgba(119,119,119,0.5);
+    -moz-box-shadow: 5px 5px 13px -1px rgba(119,119,119,0.5);
+    box-shadow: 5px 5px 13px -1px rgba(119,119,119,0.5);
 
 }
 
@@ -172,6 +178,7 @@ input, textarea {
   text-decoration: none;
   padding: 14px 16px;
   color: #777777;
+  
 }
 
 .topnav a.active {
@@ -179,6 +186,7 @@ input, textarea {
   }
 .topnav a:hover {
     color: #e8a734
+    
   }
   #links{
       margin-right: 200px;
@@ -282,3 +290,7 @@ li {
     box-shadow: 10px 10px 23px -1px rgba(119,119,119,0.5);
 }
 
+/*responsive style*/
+
+
+  
