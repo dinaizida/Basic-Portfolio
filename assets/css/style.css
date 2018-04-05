@@ -27,7 +27,7 @@ hr {
     padding: 20px;
 }
 
-.mainimage {
+.autor {
     position: relative;
     float: left;
     margin-left: 30px;
@@ -36,6 +36,7 @@ hr {
     -webkit-box-shadow: 10px 10px 23px -1px rgba(119, 119, 119, 0.5);
     -moz-box-shadow: 10px 10px 23px -1px rgba(119, 119, 119, 0.5);
     box-shadow: 10px 10px 23px -1px rgba(119, 119, 119, 0.5);
+    border: solid 2px #e8a734;
 }
 
 .maintext {
@@ -43,7 +44,9 @@ hr {
     line-height: 1.5em;
     margin: 30px;
 }
-
+.autor {
+    border-radius: 5%;
+}
 h1,
 h2,
 h3 {
